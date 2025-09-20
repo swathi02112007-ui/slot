@@ -28,97 +28,115 @@ Execute the program using runserver command.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slot Timetable</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
-    }
-    h2 {
-      text-align: center;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fff;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #007BFF;
-      color: white;
-    }
-    td {
-      height: 60px;
-    }
-    tr:nth-child(even) td {
-      background-color: #f9f9f9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header {
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 <center>
-<img src="/static/logo.png" height="100" width="540">
+<img src="/static/logo.png" height="100" width="540"
 </center>
 
-<h2>WEEKLY SLOT TIMETABLE</h2>
+    <div class="header">
+        <h3>SLOT TIME TABLE - SWATHI P N (25008251)</h3>
+    </div>
 
-<table>
-  <tr>
-    <th>Day</th>
-    <th>8:00 - 10:00</th>
-    <th>10:00 - 12:00</th>
-    <th>1:00 - 3:00</th>
-    <th>3:00 - 5:00</th>
-  </tr>
-  <tr>
-    <td>Monday</td>
-    <td>Data Science</td>
-    <td>Break</td>
-    <td>Web</td>
-    <td>C Program</td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td>Data Science</td>
-    <td>C Program</td>
-    <td>C Program</td>
-    <td>Break</td>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td>Data Science</td>
-    <td>Web</td>
-    <td>Break</td>
-    <td>Web</td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td>Break</td>
-    <td>Data Science</td>
-    <td>Break</td>
-    <td>Data Science</td>
-  </tr>
-  <tr>
-    <td>Friday</td>
-    <td>Break</td>
-    <td>C Program</td>
-    <td>Break</td>
-    <td>Data Science</td>
-  </tr>
-  <tr>
-    <td>Saturday</td>
-    <td>Break</td>
-    <td>Break</td>
-    <td>Web</td>
-    <td>C Program</td>
-  </tr>
-</table>
+    <table>
+        <tr>
+            <th>Day/Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+
+        </tr>
+        <tr>
+            <td>8-10</td>
+            <td>DS</td>
+            <td>DS</td>
+            <td>DS</td>
+            <td>FREE SLOT</td>
+            <td>FREE SLOT</td>
+            <td>FREE SLOT</td>
+        </tr>
+        <tr>
+            <td>10-12</td>
+            <td>FREE SLOT</td>
+            <td>C Program</td>
+            <td>FWAD</td>
+            <td>DS</td>
+            <td>C Program</td>
+        </tr>
+        <tr>
+            <td>12-1</td>
+            <td>LUNCH</td>
+        </tr>
+        <tr>
+            <td>1-3</td>
+            <td>FWAD</td>
+            <td>C Program</td>
+            <td>FREE SLOT</td>
+            <td>FREE SLOT</td>
+            <td>FREE SLOT</td>
+            <td>FWAD</td>
+        </tr>
+        <tr>
+            <td>3-5</td>
+            <td>C Program</td>
+            <td>FREE SLOT</td>
+            <td>FWAD</td>
+            <td>FWAD</td>
+            <td>DS</td>
+            <td>C Program</td>
+        </tr>
+    </table>
+
+    <h3>Subjects:</h3>
+    <table>
+        <tr>
+            <th>S. No.</th>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>19AI414</td>
+            <td>Fundamentals of Web Application Development (FWAD)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>19AI304</td>
+            <td>Fundamentals of C Programming (C Program)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>19AI403</td>
+            <td>Introduction to Data Science (DS)</td>
+        </tr
+    </table>
 
 </body>
 </html>
@@ -126,7 +144,8 @@ Execute the program using runserver command.
 
 
 ## OUTPUT
-![alt text](<Screenshot 2025-09-20 071129.png>)
+![alt text](<Screenshot 2025-09-20 085110.png>)
+
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
